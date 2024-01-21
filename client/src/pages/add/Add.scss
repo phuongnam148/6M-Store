@@ -1,0 +1,96 @@
+.add {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  .container {
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 30px;
+
+      font-weight: 300;
+    }
+    .addedFeatures {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      button {
+        padding: 10px !important;
+        height: 30px !important;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        background: transparent !important;
+        color: red !important;
+        border: 1px solid red !important;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      img{
+        max-width: 80px;
+        max-height: 50px;
+        cursor: pointer;
+      }
+    }
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+
+        font-size: 18px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+        }
+
+        .images {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .imagesInputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+
+        button {
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #1dbf73;
+          cursor: pointer;
+        }
+
+        .addForm {
+          display: flex;
+          justify-content: space-between;
+
+          input {
+            width: 85%;
+          }
+        }
+
+       
+      }
+    }
+  }
+}
