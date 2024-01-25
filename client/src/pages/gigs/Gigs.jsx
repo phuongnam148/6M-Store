@@ -11,6 +11,8 @@ const Gigs = () => {
   const minRef = useRef(0);
   const maxRef = useRef(1000);
 
+  let test;
+
   const { search } = useLocation();
   const cateID = search.substr(-1);
   // console.log(cateID);
