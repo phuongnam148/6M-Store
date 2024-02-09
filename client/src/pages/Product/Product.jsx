@@ -6,21 +6,21 @@ import "swiper/css/navigation";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
-import "./Gig.scss";
+import "./Product.scss";
 import { useQuery } from "@tanstack/react-query";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 import Reviews from "../../components/reviews/Reviews";
 import getCurrentUser from "../../utils/getCurrentUser";
-const Gig = () => {
+const Product = () => {
   const navigate = useNavigate();
 
-  const { gigID } = useParams();
+  const { productID } = useParams();
 
   const { isLoading, error, data } = useQuery({
-    queryKey: ["gig"],
+    queryKey: ["product"],
     queryFn: () =>
-      newRequest.get(`/gigs/single/${gigID}`).then((res) => {
+      newRequest.get(`/products/single/${productID}`).then((res) => {
         return res.data;
       }),
   });
@@ -41,10 +41,10 @@ const Gig = () => {
   });
 
   const handelContinue = () => {
-    if (!currentUser) return alert("You must login before order gig");
-    if (currentUser?.isSeller) return alert("Seller can't order gig");
+    if (!currentUser) return alert("You must login before order product");
+    if (currentUser?.isSeller) return alert("Seller can't order product");
 
-    navigate(`/pay/${gigID}`);
+    navigate(`/pay/${productID}`);
   };
 
   const handelContact = async (sellerID) => {
@@ -69,7 +69,7 @@ const Gig = () => {
   };
 
   return (
-    <div className="gig">
+    <div className="product">
       {isLoading ? (
         "Loading..."
       ) : error ? (
@@ -124,7 +124,7 @@ const Gig = () => {
                 ))}
             </Swiper>
 
-            <h2>About This Gig</h2>
+            <h2>About This Product</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? (
               "Loading"
@@ -196,7 +196,7 @@ const Gig = () => {
                 </div>
               </div>
             )}
-            <Reviews gigID={gigID} />
+            <Reviews productID={productID} />
           </div>
           <div className="right">
             <div className="price">
@@ -231,4 +231,4 @@ const Gig = () => {
   );
 };
 
-export default Gig;
+export default Product;

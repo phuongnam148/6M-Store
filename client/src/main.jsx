@@ -4,7 +4,6 @@ import "./index.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Gig from "./pages/gig/Gig";
 import Orders from "./pages/orders/Orders";
 import MyGigs from "./pages/myGigs/MyGigs";
 import Add from "./pages/add/Add";
@@ -18,7 +17,8 @@ import Profile from "./pages/profile/Profile";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import UserLayout from "./routes/UserLayout";
 import Error from "./routes/error/Error";
-import Products from "./pages/gigs/Products";
+import Products from "./pages/Products/Products";
+import Product from "./pages/Product/Product";
 
 const router = createBrowserRouter([
   {
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "/gig/:gigID",
-        element: <Gig />,
+        path: "/product/:productID",
+        element: <Product />,
       },
       {
         path: "/orders",
