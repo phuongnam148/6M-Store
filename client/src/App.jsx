@@ -3,7 +3,6 @@ import Navbar from "./components/navbar/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
-import Gig from "./pages/gig/Gig";
 import Add from "./pages/add/Add";
 import Orders from "./pages/orders/Orders";
 import MyGigs from "./pages/myGigs/MyGigs";
@@ -13,7 +12,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Pay from "./pages/pay/Pay";
 import Success from "./pages/success/Success";
-import Products from "./pages/gigs/Products";
+import Products from "./pages/Products/Products";
 
 import {
   QueryClient,
@@ -23,6 +22,7 @@ import {
 import newRequest from "./utils/newRequest";
 import Profile from "./pages/profile/Profile";
 import Error from "./routes/error/Error";
+import Product from "./pages/Product/Product";
 
 const queryClient = new QueryClient();
 
@@ -68,8 +68,8 @@ const App = () => {
           element: <Products />,
         },
         {
-          path: "/gig/:gigID",
-          element: <Gig />,
+          path: "/product/:productID",
+          element: <Product />,
         },
         {
           path: "/orders",
