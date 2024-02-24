@@ -19,7 +19,7 @@ const Products = () => {
     queryFn: () =>
       newRequest
         .get(
-          `/products${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
+          `/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
         )
         .then((res) => {
           return res.data;
