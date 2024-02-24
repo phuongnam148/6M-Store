@@ -15,7 +15,7 @@ import './Home.scss';
 import CatCard from '../../components/catCard/CatCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 const Home = () => {
-  const onChange = (key) => {
+const onChange = (key) => {
     console.log(key);
   };
 
@@ -52,6 +52,7 @@ const Home = () => {
 
       <div className="slide">
         <div className="container">
+          <h1>Popular professional services</h1>
           <Tabs
             onChange={onChange}
             type="card"
