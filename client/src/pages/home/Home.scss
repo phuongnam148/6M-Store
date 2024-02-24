@@ -1,4 +1,24 @@
 .home {
+    .ant-tabs-nav-list {
+        .ant-tabs-tab {
+            margin-right: 8px;
+            background-color: white;
+            color: #000000;
+            border-radius: 0 !important;
+            border: 1px solid black;
+
+            &.ant-tabs-tab-active {
+                background-color: black;
+
+                .ant-tabs-tab-btn {
+                    color: white !important;
+
+                }
+            }
+
+        }
+    }
+
     .slide {
         display: flex;
         justify-content: center;

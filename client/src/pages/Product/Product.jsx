@@ -20,7 +20,7 @@ const Product = () => {
   const { isLoading, error, data } = useQuery({
     queryKey: ["product"],
     queryFn: () =>
-      newRequest.get(`/products/single/${productID}`).then((res) => {
+      newRequest.get(`/gigs/single/${productID}`).then((res) => {
         return res.data;
       }),
   });

@@ -1,39 +1,39 @@
-import React, { useEffect } from "react";
-import Navbar from "./components/navbar/Navbar";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Footer from "./components/footer/Footer";
-import Home from "./pages/home/Home";
-import Add from "./pages/add/Add";
-import Orders from "./pages/orders/Orders";
-import MyGigs from "./pages/myGigs/MyGigs";
-import Message from "./pages/message/Message";
-import Messages from "./pages/messages/Messages";
-import Register from "./pages/register/Register";
-import Login from "./pages/login/Login";
-import Pay from "./pages/pay/Pay";
-import Success from "./pages/success/Success";
-import Products from "./pages/Products/Products";
+import React, { useEffect } from 'react';
+import Navbar from './components/navbar/Navbar';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import Footer from './components/footer/Footer';
+import Home from './pages/home/Home';
+import Add from './pages/add/Add';
+import Orders from './pages/orders/Orders';
+import MyGigs from './pages/myGigs/MyGigs';
+import Message from './pages/message/Message';
+import Messages from './pages/messages/Messages';
+import Register from './pages/register/Register';
+import Login from './pages/login/Login';
+import Pay from './pages/pay/Pay';
+import Success from './pages/success/Success';
+import Products from './pages/Products/Products';
 
 import {
   QueryClient,
   QueryClientProvider,
   useQuery,
-} from "@tanstack/react-query";
-import newRequest from "./utils/newRequest";
-import Profile from "./pages/profile/Profile";
-import Error from "./routes/error/Error";
-import Product from "./pages/Product/Product";
+} from '@tanstack/react-query';
+import newRequest from './utils/newRequest';
+import Profile from './pages/profile/Profile';
+import Error from './routes/error/Error';
+import Product from './pages/Product/Product';
 
 const queryClient = new QueryClient();
 
 const App = () => {
   const checkUser = async () => {
     try {
-      const res = await newRequest.get("/users");
-      localStorage.setItem("currentUser", JSON.stringify(res.data));
+      const res = await newRequest.get('/users');
+      localStorage.setItem('currentUser', JSON.stringify(res.data));
       // navigate('/');
     } catch (error) {
-      localStorage.setItem("currentUser", null);
+      localStorage.setItem('currentUser', null);
       console.log(error);
     }
   };
@@ -55,60 +55,60 @@ const App = () => {
   };
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: <Layout />,
       errorElement: <Error />,
       children: [
         {
-          path: "/",
+          path: '/',
           element: <Home />,
         },
         {
-          path: "/products",
+          path: '/products',
           element: <Products />,
         },
         {
-          path: "/product/:productID",
+          path: '/product/:productID',
           element: <Product />,
         },
         {
-          path: "/orders",
+          path: '/orders',
           element: <Orders />,
         },
         {
-          path: "/mygigs",
+          path: '/mygigs',
           element: <MyGigs />,
         },
         {
-          path: "/add",
+          path: '/add',
           element: <Add />,
         },
         {
-          path: "/messages",
+          path: '/messages',
           element: <Messages />,
         },
         {
-          path: "/message/:id",
+          path: '/message/:id',
           element: <Message />,
         },
         {
-          path: "/register",
+          path: '/register',
           element: <Register />,
         },
         {
-          path: "/login",
+          path: '/login',
           element: <Login />,
         },
         {
-          path: "/pay/:gigID",
+          path: '/pay/:gigID',
           element: <Pay />,
         },
         {
-          path: "/success",
+          path: '/success',
           element: <Success />,
         },
         {
-          path: "/profile",
+          path: '/profile',
           element: <Profile />,
         },
       ],

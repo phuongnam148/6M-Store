@@ -4,6 +4,7 @@ import Featured from '../../components/featured/Featured';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Tabs } from 'antd';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 
@@ -14,6 +15,35 @@ import './Home.scss';
 import CatCard from '../../components/catCard/CatCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 const Home = () => {
+  const onChange = (key) => {
+    console.log(key);
+  };
+
+  const tabDetail = () => {
+    return (
+      <Swiper
+        rewind={true}
+        spaceBetween={15}
+        slidesPerView={5}
+        navigation={true}
+        modules={[Navigation]}
+      >
+        {cards.map((card) => (
+          <SwiperSlide key={card.id}>
+            <CatCard item={card} key={card.id} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    );
+  };
+
+  const items = [
+    { label: 'Hàng mới về', key: 'item-1', children: tabDetail() }, // remember to pass the key prop
+    { label: 'Rivalry Originals', key: 'item-2', children: tabDetail() },
+    { label: 'Dép adidas', key: 'item-3', children: tabDetail() },
+    { label: 'Giày Terrace', key: 'item-5', children: tabDetail() },
+  ];
+
   return (
     <div className="home">
       <Featured />
@@ -22,7 +52,13 @@ const Home = () => {
 
       <div className="slide">
         <div className="container">
-          <h1>Popular professional services</h1>
+          <Tabs
+            onChange={onChange}
+            type="card"
+            items={items}
+            itemColor="white"
+          />
+          {/* <h1>Popular professional services</h1>
           <Swiper
             rewind={true}
             spaceBetween={15}
@@ -35,7 +71,7 @@ const Home = () => {
                 <CatCard item={card} key={card.id} />
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
         </div>
       </div>
 
