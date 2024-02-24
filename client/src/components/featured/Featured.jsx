@@ -11,11 +11,18 @@ const Featured = () => {
     <div className="featured">
       <div className="container bg">
         <h1>
-          Find the perfect <i>freelance</i>
-          <br /> services for your business
+          LUNAR NEW YEAR SALE
         </h1>
+        <br />
+        <p>
+        25/01 - 31/01
+        <br />
+
+        Ưu đãi lên đến 60%. Giá hiển thị trên trang web là giá bán cuối cùng. <br />
+        Một số sản phẩm ngoại lệ. Điều khoản và Điều kiện đi kèm.
+        </p>
         <div className="search">
-          <div className="searchInput">
+          {/* <div className="searchInput">
             <img src="./img/search.png" alt="" />
             <input
               type="text"
@@ -24,8 +31,8 @@ const Featured = () => {
               id=""
               onChange={(e) => setInput(e.target.value)}
             />
-          </div>
-          <button onClick={handleClick}>Search</button>
+          </div> */}
+          <button onClick={handleClick}>SĂN SALE</button>
         </div>
         <div className="popular">
           <span>Popular:</span>

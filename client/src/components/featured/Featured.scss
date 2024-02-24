@@ -1,9 +1,9 @@
 .featured {
-    height: 680px;
+    height: 750px;
     display: flex;
     justify-content: center;
     color: white;
-    background-image: url("/img/bg-hero-1-1792-x1.webp");
+    background-image: url("/img/SS_24_LNY_Onsite_VN_MH_DT_2800x1280_ff035585e1.avif");
     background-size: 100% 100%;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -14,32 +14,32 @@
     animation-timing-function: step-end;
 
 
-    @keyframes changBg {
-        0% {
-            background-image: url("/img/bg-hero-4-1792-x1.webp");
-            animation-delay: 50s;
-        }
+    // @keyframes changBg {
+    //     0% {
+    //         background-image: url("/img/bg-hero-4-1792-x1.webp");
+    //         animation-delay: 50s;
+    //     }
 
-        25% {
-            background-image: url("/img/bg-hero-5-1792-x1.webp");
-            animation-delay: 50s;
-        }
+    //     25% {
+    //         background-image: url("/img/bg-hero-5-1792-x1.webp");
+    //         animation-delay: 50s;
+    //     }
 
-        50% {
-            background-image: url("/img/bg-hero-6-1792-x1.webp");
-            animation-delay: 50s;
-        }
+    //     50% {
+    //         background-image: url("/img/bg-hero-6-1792-x1.webp");
+    //         animation-delay: 50s;
+    //     }
 
-        75% {
-            background-image: url("/img/bg-hero-2-1792-x1.webp");
-            animation-delay: 50s;
-        }
+    //     75% {
+    //         background-image: url("/img/bg-hero-2-1792-x1.webp");
+    //         animation-delay: 50s;
+    //     }
 
-        100% {
-            background-image: url("/img/bg-hero-3-1792-x1.webp");
-            animation-delay: 50s;
-        }
-    }
+    //     100% {
+    //         background-image: url("/img/bg-hero-3-1792-x1.webp");
+    //         animation-delay: 50s;
+    //     }
+    // }
 
     .container {
         h1 {
@@ -55,7 +55,7 @@
             justify-content: space-between;
             background-color: white;
             border-radius: 5px;
-            width: 50%;
+            width: 12%;
             margin: 20px 0;
 
             .searchInput {
@@ -79,16 +79,19 @@
             }
 
             button {
-                width: 120px;
+                width: 170px;
                 height: 50px;
                 border: none;
-                background-color: #1dbf73;
+                background-color: white;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
-                color: white;
+                color: black;
                 cursor: pointer;
-                font-size: 16px;
-                font-weight: bold;
+                font-size:  var(--gl-button-font-set-size-functional-1);
+                font-weight: var(--gl-button-font-set-weight-functional-1);
+                font-family: var(--gl-button-font-set-family-functional-1),var(--gl-font-family-fallback);
+                font-style: var(--gl-button-font-set-style-functional-1);
+                letter-spacing: var(--gl-button-font-set-letterspacing-functional-1);
             }
         }
 
