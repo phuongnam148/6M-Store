@@ -92,7 +92,7 @@ const Navbar = () => {
               <Link
                 key={c.id}
                 className="link menuLink"
-                to={`/gigs?category=${c.id}`}
+                to={`/products?category=${c.id}`}
               >
                 {c.title}
                 <hr />

@@ -14,12 +14,25 @@ import TrustedBy from '../../components/trustedBy/TrustedBy';
 import './Home.scss';
 import CatCard from '../../components/catCard/CatCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import { depAdidas, giayTerrace, hangMoiVe } from '../../dumpdata';
+import { Link } from 'react-router-dom';
 const Home = () => {
 const onChange = (key) => {
     console.log(key);
   };
 
-  const tabDetail = () => {
+  const formatProducts = (prods)=>{
+    return prods.map((prod) => ({
+      id: 1,
+      category: prod.attribute_list.category,
+      image_url:prod.product_description.description_assets.image_url,
+      price: prod.pricing_information.currentPrice,
+      title: prod.name ,
+      badge_text: prod.attribute_list.badge_text,
+    }))
+  }
+
+  const tabDetail = (prods) => {
     return (
       <Swiper
         rewind={true}
@@ -28,7 +41,7 @@ const onChange = (key) => {
         navigation={true}
         modules={[Navigation]}
       >
-        {cards.map((card) => (
+        {formatProducts(prods).map((card) => (
           <SwiperSlide key={card.id}>
             <CatCard item={card} key={card.id} />
           </SwiperSlide>
@@ -38,41 +51,30 @@ const onChange = (key) => {
   };
 
   const items = [
-    { label: 'Hàng mới về', key: 'item-1', children: tabDetail() }, // remember to pass the key prop
-    { label: 'Rivalry Originals', key: 'item-2', children: tabDetail() },
-    { label: 'Dép adidas', key: 'item-3', children: tabDetail() },
-    { label: 'Giày Terrace', key: 'item-5', children: tabDetail() },
+    { label: 'Hàng mới về', key: 'item-1', children: tabDetail(hangMoiVe) }, // remember to pass the key prop
+    { label: 'Dép adidas', key: 'item-2', children: tabDetail(depAdidas) },
+    // { label: 'Dép adidas', key: 'item-3', children: tabDetail() },
+    { label: 'Giày Terrace', key: 'item-5', children: tabDetail(giayTerrace) },
   ];
 
   return (
     <div className="home">
       <Featured />
 
-      <TrustedBy />
+      {/* <TrustedBy /> */}
 
-      <div className="slide">
-        <div className="container">
-          <h1>Popular professional services</h1>
+      <div className="slide mt-8 relative">
+        <div className="container mt-8 relative">
+          <Link to={'/products?category=1'} className='absolute top-0 right-0 z-10'>
+            <p className='underline hover:bg-black hover:text-white'> Xem Thêm </p>
+          </Link>
           <Tabs
+            className='z-1'
             onChange={onChange}
             type="card"
             items={items}
             itemColor="white"
           />
-          {/* <h1>Popular professional services</h1>
-          <Swiper
-            rewind={true}
-            spaceBetween={15}
-            slidesPerView={5}
-            navigation={true}
-            modules={[Navigation]}
-          >
-            {cards.map((card) => (
-              <SwiperSlide key={card.id}>
-                <CatCard item={card} key={card.id} />
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
         </div>
       </div>
 

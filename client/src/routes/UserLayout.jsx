@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import Navbar from "../components/navbar/Navbar";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/footer/Footer";
 import newRequest from "../utils/newRequest";
 
@@ -15,6 +15,12 @@ const UserLayout = () => {
       console.log(error);
     }
   };
+
+  const location = useLocation();
+  // Scroll to top if path changes
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     checkUser();

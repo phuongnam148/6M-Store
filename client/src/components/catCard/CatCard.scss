@@ -1,29 +1,7 @@
-.catCard {
-    width: 252px;
-    height: 344px;
-    color: white;
-    cursor: pointer;
-    position: relative;
+.catCard{
+    color: black !important;
+}
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-
-    .desc {
-        font-weight: 300;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-    }
-
-    .title {
-        font-weight: 800;
-        font-style: 60px;
-        position: absolute;
-        left: 15px;
-        top: 40px;
-    }
+.catCard:hover{
+    border: 1px solid black;
 }
