@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Featured from '../../components/featured/Featured';
 
 import 'swiper/css';
@@ -78,94 +78,44 @@ const onChange = (key) => {
         </div>
       </div>
 
-      <div className="features">
-        <div className="container">
-          <div className="item">
-            <h1>A whole world of freelance talent at your fingertips</h1>
-            <div className="title">
-              <img src="./img/check.png" alt="" />{' '}
-              <h3>The best for every budget</h3>
+      <div class="main">
+
+<div class="banner">
+    <div class="logo">
+    <img src="./img/img.png" alt="" />
+        <div class="content">
+        <h2>YEEZY BOOST 350</h2><h2>V2 STEEL GREY</h2>  
+            <div class="after_border">
+                <div class="change">
+                    <span>KHÁM PHÁ THÊM</span>
+                    <box-icon color="white" name='right-arrow-alt'></box-icon>
+                </div>
             </div>
-            <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
-            </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />{' '}
-              <h3>Quality work done quickly</h3>
-            </div>
-            <p>
-              Find the right freelancer to begin working on your project within
-              minutes.
-            </p>{' '}
-            <div className="title">
-              <img src="./img/check.png" alt="" />{' '}
-              <h3>Protected payments, every time</h3>
-            </div>
-            <p>
-              Always know what you'll pay upfront. Your payment isn't released
-              until you approve the work.
-            </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              <h3>24/7 support</h3>
-            </div>
-            <p>
-              Questions? Our round-the-clock support team is available to help
-              anytime, anywhere.
-            </p>
-          </div>
-          <div className="item">
-            <video
-              src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"
-              controls
-            ></video>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+<div class="content_trailer">
+<div class="video_trailer">
+<video id="myVideo" autoPlay width="100%" src="./img/originals_ss24_2000running_hp_mh_d_3d7741f837.mp4" alt=""></video>
 
-      <div className="features dark">
-        <div className="container">
-          <div className="item">
-            <span className="h2">
-              <b>fiverr</b> <i>business</i>
-            </span>
-            <p className="h1">
-              <b>
-                {' '}
-                A business solution
-                <br /> designed for
-              </b>{' '}
-              <i>teams</i>
-            </p>
-            <p className="mx-2">
-              Upgrade to a curated experience packed with tools and benefits,
-              dedicated to businesses
-            </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              Connect to freelancers with proven business experience
-            </div>
-
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              Get matched with the perfect talent by a customer success manager
-            </div>
-            <div className="title">
-              <img src="./img/check.png" alt="" /> Manage teamwork and boost
-              productivity with one powerful workspace
-            </div>
-
-            <button>Explore Fiverr Business</button>
-          </div>
-          <div className="item">
-            <img
-              className="item_img"
-              src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624757/business-desktop-870-x1.png"
-            />
-          </div>
+</div>
+<div class="content_video">
+    <h2>2000'S RUNNING</h2>
+    <span>Tái hiện đôi giày chạy bộ biểu tượng <br />
+        nhất đầu thiên niên kỷ này cho ngày nay.</span>
+    <div class="after_border_video">
+        <div class="change_video">
+            <button>Mua Ngay</button>
+            <box-icon name='right-arrow-alt'></box-icon>
         </div>
-      </div>
+    </div>
+    <div class="control_video" id="start-and-stop">
+        <box-icon id="lines" name='play' color='#ffffff' ></box-icon>
+        <box-icon color="white" id="plays" name='pause'></box-icon>
+  </div>
+</div>
+</div>
+</div>
 
       <div className="slide gray">
         <div className="container">
