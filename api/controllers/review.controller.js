@@ -1,6 +1,6 @@
 import createError from "../utils/createError.js";
 import Review from "../models/review.model.js";
-import Gig from "../models/gig.model.js";
+import Product from "../models/product.model.js";
 
 
 export const createReview = async (req, res, next) => {
@@ -10,7 +10,7 @@ export const createReview = async (req, res, next) => {
 
         const newReview = new Review({
             userID: req.userID,
-            gigID: req.body.gigID,
+            productID: req.body.productID,
             desc: req.body.desc,
             star: req.body.star,
         })
@@ -18,13 +18,13 @@ export const createReview = async (req, res, next) => {
         try {
             const review = await Review.findOne({
                 userID: req.userID,
-                gigID: req.body.gigID,
+                productID: req.body.productID,
             })
-            if (review) return next(createError(403, "You have already created a review for this gig!"));
+            if (review) return next(createError(403, "You have already created a review for this product!"));
 
             const savedReview = await newReview.save()
 
-            await Gig.findByIdAndUpdate(req.body.gigID, { $inc: { totalStars: req.body.star, starNumber: 1 } })
+            await Product.findByIdAndUpdate(req.body.productID, { $inc: { totalStars: req.body.star, starNumber: 1 } })
 
             res.status(201).send(savedReview)
 
@@ -41,7 +41,7 @@ export const createReview = async (req, res, next) => {
 
 export const getReviews = async (req, res, next) => {
     try {
-        const reviews = await Review.find({ gigID: req.params.gigID })
+        const reviews = await Review.find({ productID: req.params.productID })
         res.status(200).send(reviews)
     } catch (error) {
         next(error);
