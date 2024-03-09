@@ -95,210 +95,245 @@ const Products = () => {
         </div>
         <div className="all">
           <div class="h-[1200px] m-auto mt-[20px] flex flex-wrap">
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
-            <div class="w-[25%] h-[400px] pr-[5px]">
-              <div class="h-[303px] relative">
-                <img
-                  src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
-                  alt=""
-                  class="w-[303px] h-[303px] absolute"
-                />
-                <button class="bg-white absolute top-[280px] left-[10px]">
-                  1.700.000đ
-                </button>
-              </div>
-              <div class="p-[10px]">
-                <p class="font-medium">Giày superstar Adifom</p>
-                <p class="font-thin">Nam Original</p>
-                <p class="font-medium">Mới</p>
-              </div>
-            </div>
+          <div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
+<div class="w-[25%] h-[400px] pr-[5px]">
+  <div class="h-[303px] relative">
+    <div class="image-container">
+      <img
+        src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+        alt=""
+        class="w-[303px] h-[303px] absolute"
+      />
+    </div>
+    <button class="bg-white absolute top-[280px] left-[10px]">
+      1.700.000đ
+    </button>
+  </div>
+  <div class="p-[10px]">
+    <p class="font-medium">Giày superstar Adifom</p>
+    <p class="font-thin">Nam Original</p>
+    <p class="font-medium">Mới</p>
+  </div>
+</div>
+
           </div>
           <br />
           <h1>GIÀY NAM ADIDAS MỚI NHẤT</h1>

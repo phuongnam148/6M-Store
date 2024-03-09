@@ -115,3 +115,21 @@
 .all{
     flex-wrap: wrap;
 }
+/* CSS */
+.image-container {
+    overflow: hidden; /* Ẩn phần ngoài của hình ảnh khi zoom */
+    width: 303px;
+    height: 303px;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Thêm transition cho hiệu ứng mượt mà */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Hiệu ứng zoom khi hover */
+  }
+  
