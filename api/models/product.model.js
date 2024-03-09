@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const gigSchema = new Schema({
-    userID: {
+const productSchema = new Schema({
+    id: {
         type: String,
         required: true,
     },
@@ -30,25 +30,26 @@ const gigSchema = new Schema({
         type: [String],
         required: false,
     },
-    shortTitle: {
-        type: String,
-        required: true,
-    },
-    shortDesc: {
-        type: String,
-        required: true,
-    },
-    deliveryTimes: {
-        type: Number,
-        required: true,
-    },
-    revisionNumber: {
-        type: Number,
-        required: true,
-    },
+    // shortTitle: {
+    //     type: String,
+    //     required: true,
+    // },
+    // shortDesc: {
+    //     type: String,
+    //     required: true,
+    // },
+    // deliveryTimes: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // revisionNumber: {
+    //     type: Number,
+    //     required: true,
+    // },
     features: {
         type: [String],
         required: false,
+        default: [],
     },
     totalStars: {
         type: Number,
@@ -66,4 +67,4 @@ const gigSchema = new Schema({
     timestamps: true
 });
 
-export default mongoose.model('Gig', gigSchema)
+export default mongoose.model('Product', productSchema)

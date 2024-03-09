@@ -1,25 +1,25 @@
 import Order from "../models/order.model.js";
-import Gig from "../models/gig.model.js";
+import Product from "../models/product.model.js";
 import Stripe from "stripe";
 
 export const intent = async (req, res, next) => {
   const stripe = new Stripe(process.env.STRIPE);
 
   try {
-    const gig = await Gig.findById(req.params.gigID);
+    const product = await Product.findById(req.params.productID);
 
-    await Gig.findOneAndUpdate(
-      { _id: req.params.gigID },
+    await Product.findOneAndUpdate(
+      { _id: req.params.productID },
       {
         $set: {
-          sales: gig.sales + 1,
+          sales: product.sales + 1,
         },
       }
     );
     res.status(200).send("Avatar change");
     // Create a PaymentIntent with the order amount and currency
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: gig.price * 100,
+      amount: product.price * 100,
       currency: "sgd",
       automatic_payment_methods: {
         enabled: true,
@@ -27,12 +27,12 @@ export const intent = async (req, res, next) => {
     });
 
     const newOrder = new Order({
-      gigID: gig._id,
-      image: gig.cover,
-      title: gig.title,
+      productID: product._id,
+      image: product.cover,
+      title: product.title,
       buyerID: req.userID,
-      sellerID: gig.userID,
-      price: gig.price,
+      sellerID: product.userID,
+      price: product.price,
       payment_intent: paymentIntent.id,
     });
 
@@ -47,15 +47,15 @@ export const intent = async (req, res, next) => {
 
 // export const createOrder = async (req, res, next) => {
 //     try {
-//         const gig = await Gig.findById(req.params.gigID)
+//         const product = await Product.findById(req.params.productID)
 
 //         const newOrder = new Order({
-//             gigID: gig._id,
-//             image: gig.cover,
-//             title: gig.title,
+//             productID: product._id,
+//             image: product.cover,
+//             title: product.title,
 //             buyerID: req.userID,
-//             sellerID: gig.userID,
-//             price: gig.price,
+//             sellerID: product.userID,
+//             price: product.price,
 //             payment_intent: "temporary"
 //         })
 

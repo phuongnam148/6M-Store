@@ -5,7 +5,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 
 import userRouter from "./routes/user.route.js";
-import gigRouter from "./routes/gig.route.js";
+import productRouter from "./routes/product.route.js";
 import conversationRouter from "./routes/conversation.route.js";
 import messageRouter from "./routes/message.route.js";
 import reviewRouter from "./routes/review.route.js";
@@ -32,7 +32,7 @@ const connect = async () => {
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "http://localhost:5174"],
   })
 );
 app.use(express.json());
@@ -40,7 +40,7 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRouter);
 app.use("/api/users", userRouter);
-app.use("/api/gigs", gigRouter);
+app.use("/api/products", productRouter);
 app.use("/api/messages", messageRouter);
 app.use("/api/conversations", conversationRouter);
 app.use("/api/reviews", reviewRouter);
