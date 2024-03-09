@@ -300,7 +300,10 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <h2></h2>
+          <br />
+          <h1>GIÀY NAM ADIDAS MỚI NHẤT</h1>
+          <br />
+          <p>Thật khó để chọn được đôi giày yêu thích của bạn khi có rất nhiều giày adidas nam mới để bạn lựa chọn. Câu hỏi thực sự là bạn nên chọn giày chạy bộ nhẹ, giày thể thao hợp thời trang hay giày trượt thoải mái? Bạn là người hâm mộ Stan Smith hơn hay bạn cần bản sửa lỗi UltraBoost để giúp bạn luôn tự tin trong lần chạy lớn tiếp theo? Dù bạn quyết định thế nào, bạn chắc chắn sẽ tìm thấy những đôi giày adidas dành cho nam mới nhất phù hợp với phong cách của bạn. Đó là sự kết hợp của nhiều phong cách chú trọng đến chức năng, thời trang và hiệu suất. Hãy tìm kiếm sự kết hợp màu sắc vui nhộn, đồ họa táo bạo, kiểu dáng cổ điển và thiết kế đầy cảm hứng để mang đến cho bộ sưu tập giày dép của bạn một làn sóng năng lượng mới. Duyệt qua adidas để tìm những đôi giày nam mới nhất từ ​​giày đế bệt đến giày cao cổ.</p>
         </div>
         <div className="cards">
           {isLoading
