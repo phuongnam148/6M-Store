@@ -45,51 +45,260 @@ const Products = () => {
   return (
     <div className="products">
       <div className="container">
-        <span className="breadcrumbs">Home / {category[cateID - 1].title}</span>
+        <span className="breadcrumbs">Nam / {category[cateID - 1].title}</span>
         <h1>{cards[cateID - 1].title}</h1>
         <p>
-          Explore the boundaries of art and technology with Fiverr{"'"}s AI
-          artists
+        Dòng sản phẩm giày nam của adidas sẽ đáp ứng mọi nhu cầu, <br /> dù là bạn đang phấn đấu để trở thành người giỏi nhất <br /> hay chỉ muốn có một đôi giày vừa vặn nhất trong cuộc sống hàng ngày của mình. <br /> Với thiết kế mang tính biểu tượng và công nghệ hiệu suất cao, bạn có thể chắc chắn rằng đôi giày của mình sẽ không khiến bạn thất vọng.
         </p>
         <div className="menu">
           <div className="left">
-            <span>Budget</span>
-            <input ref={minRef} type="number" placeholder="min" />
-            <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Apply</button>
+            <span>Giá</span>
+            <input ref={minRef} type="number" placeholder="thấp" />
+            <input ref={maxRef} type="number" placeholder="cao" />
+            <button onClick={apply}>ÁP Dụng</button>
           </div>
           <div className="right">
-            <span className="sortBy">Sort by</span>
+            <span className="sortBy">Sắp Xếp Theo</span>
             <span className="sortType">
-              {sort === "sales" && "Best Selling"}
-              {sort === "price" && "Price"}
-              {sort === "createdAt" && "Newest"}
+              {sort === "sales" && "Bán Chạy Nhất"}
+              {sort === "price" && "Giá"}
+              {sort === "createdAt" && "Mới Nhất"}
             </span>
             <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightMenu">
                 {sort === "sales" && (
                   <>
-                    <span onClick={() => reSort("createdAt")}>Newest</span>
-                    <span onClick={() => reSort("price")}>Price</span>
+                    <span onClick={() => reSort("createdAt")}>Mới Nhất</span>
+                    <span onClick={() => reSort("price")}>Giá</span>
                   </>
                 )}
                 {sort === "price" && (
                   <>
-                    <span onClick={() => reSort("sales")}>Best Selling</span>
-                    <span onClick={() => reSort("createdAt")}>Newest</span>
+                    <span onClick={() => reSort("sales")}>Bán Chạy Nhất</span>
+                    <span onClick={() => reSort("createdAt")}>Mới Nhất</span>
                   </>
                 )}
                 {sort === "createdAt" && (
                   <>
-                    <span onClick={() => reSort("price")}>Price</span>
-                    <span onClick={() => reSort("sales")}>Best Selling</span>
+                    <span onClick={() => reSort("price")}>Giá</span>
+                    <span onClick={() => reSort("sales")}>Bán Chạy Nhất</span>
                   </>
                 )}
               </div>
             )}
           </div>
         </div>
+        </div>
+        <div className="all">
+    <div class="max-w-[1220px] h-[1200px] m-auto mt-[20px] flex flex-wrap">
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+      <div class="w-[25%] h-[400px] pr-[5px]">
+        <div class="h-[303px] relative">
+          <img
+            src="../img/Giay_Superstar_Adifom_Be_IF6179_01_standard.avif"
+            alt=""
+            class="w-[303px] h-[303px] absolute"
+          />
+          <button class="bg-white absolute top-[280px] left-[10px]">
+            1.700.000đ
+          </button>
+        </div>
+        <div class="p-[10px]">
+          <p class="font-medium">Giày superstar Adifom</p>
+          <p class="font-thin">Nam Original</p>
+          <p class="font-medium">Mới</p>
+        </div>
+      </div>
+    </div>
+    <h2></h2>
+    </div>
         <div className="cards">
           {isLoading
             ? "loading"
@@ -99,7 +308,7 @@ const Products = () => {
               data.map((gig) => <GigCard key={gig._id} item={gig} />)}
         </div>
       </div>
-    </div>
+    
   );
 };
 
