@@ -11,7 +11,6 @@ import messageRouter from "./routes/message.route.js";
 import reviewRouter from "./routes/review.route.js";
 import orderRouter from "./routes/order.route.js";
 import authRouter from "./routes/auth.route.js";
-import wheelRouter from "./routes/wheel.route.js";
 
 const app = express();
 const port = 3000;
@@ -45,7 +44,6 @@ app.use("/api/messages", messageRouter);
 app.use("/api/conversations", conversationRouter);
 app.use("/api/reviews", reviewRouter);
 app.use("/api/orders", orderRouter);
-app.use("/api/wheel", wheelRouter);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

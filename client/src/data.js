@@ -55,36 +55,28 @@ export const category = [
     },
     {
         id: 2,
-        title: "Digital Marketing",
+        title: "Quần áo",
     },
     {
         id: 3,
-        title: "Writing & Translation",
+        title: "Phụ kiện",
     },
     {
         id: 4,
-        title: "Video & Animation",
+        title: "Thể thao",
     },
     {
         id: 5,
-        title: "Music & Audio",
+        title: "Các nhãn hiệu",
     },
     {
         id: 6,
-        title: "Programming & Tech",
+        title: "Mới ra mắt",
     },
     {
         id: 7,
-        title: "Photography",
-    },
-    {
-        id: 8,
-        title: "Business",
-    },
-    {
-        id: 9,
-        title: "Lifestyle",
-    },
+        title: "Giảm giá",
+    }
 ];
 
 

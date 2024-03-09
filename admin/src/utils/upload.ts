@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const upload = async (file) => {
+export const upload = async (file: string) => {
   const data = new FormData();
   data.append("file", file);
   data.append("upload_preset", "fiverr");

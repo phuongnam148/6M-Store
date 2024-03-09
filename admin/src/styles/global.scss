@@ -1,6 +1,9 @@
 @import "./variables.scss";
 @import "./responsive.scss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+;
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +36,7 @@ a {
 }
 
 .contentContainer {
+  overflow: hidden;
   padding: 5px 20px;
   width: 100%;
 }

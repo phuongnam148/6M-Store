@@ -39,7 +39,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    checkUser();
+    // checkUser();
   }, []);
 
   const Layout = () => {

@@ -48,6 +48,7 @@ export const getProduct = async (req, res, next) => {
 
 export const getProducts = async (req, res, next) => {
   const query = req.query;
+
   const filters = {
     ...(query.category && { category: query.category }),
     ...(query.userID && { userID: query.userID }),
@@ -58,10 +59,15 @@ export const getProducts = async (req, res, next) => {
       },
     }),
     ...(query.search && { title: { $regex: query.search, $options: "i" } }), // options i để search cả lowercase và uppercase
+    ...(query.paging && { category: query.category })
   };
   try {
-    const products = await Product.find(filters).sort({ [query.sort]: -1 });
-    res.status(200).send(products);
+    const products = await Product.find(filters).limit(query.pageSize || undefined).skip(query.pageSize * query.page || undefined).sort({ [query.sort]: -1 });
+    const totalProds = await Product.count()
+    res.status(200).send({
+      data: products,
+      totalProds
+    });
   } catch (error) {
     next(error);
   }

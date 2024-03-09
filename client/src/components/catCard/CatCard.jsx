@@ -15,7 +15,7 @@ const CatCard = ({ item }) => {
         <div className="h-[303px] relative">
           {/* <img src="" alt="" /> */}
           <img
-            src={item.image_url}
+            src={item.cover}
             alt=""
             className="w-[303px] h-[303px] absolute"
           />

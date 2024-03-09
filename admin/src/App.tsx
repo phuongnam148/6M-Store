@@ -15,15 +15,16 @@ import {
 } from "@tanstack/react-query";
 import Categories from "./pages/categories/Categories";
 
-
 const queryClient = new QueryClient();
 
+
 function App() {
+
   const Layout = () => {
     return (
       <div className="main">
         <Navbar />
-        <div className="container">
+        <div className="container min-h-96">
           <div className="menuContainer">
             <Menu />
           </div>
